@@ -1,0 +1,8 @@
+<div class="card flex justify-content-center">
+    <div class="flex flex-column gap-2">
+        <label htmlFor="label" *ngIf="label" [class.mandatory]="isMandatory">{{ label }}</label>
+        <input pInputText id="input" [placeholder]="placeholder" aria-describedby="input-help"
+            (input)="onInputChange($event)" />
+        <small *ngIf=" hintText" class="hint-text">{{ hintText }}</small>
+    </div>
+</div>
