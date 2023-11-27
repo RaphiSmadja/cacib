@@ -1,6 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { InputComponent } from './input.component';
+import { FormsModule } from '@angular/forms';
+import { EventEmitter, Input, Output } from '@angular/core';
 
 describe('InputComponent', () => {
   let component: InputComponent;
@@ -8,7 +10,8 @@ describe('InputComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [InputComponent]
+      declarations: [InputComponent],
+      imports: [FormsModule]
     })
     .compileComponents();
     
@@ -17,7 +20,7 @@ describe('InputComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create input', () => {
     expect(component).toBeTruthy();
   });
 });

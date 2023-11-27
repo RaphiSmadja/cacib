@@ -1,10 +1,40 @@
-/* input.component.scss */
 label {
-    font-weight: bold;
-    margin-bottom: 8px;
-  
-    &.mandatory::after {
-      content: ' *';
-    }
+  font-weight: bold;
+  margin-bottom: 8px;
+
+  &.mandatory::after {
+    content: ' *';
   }
-  
+}
+
+.layout-content .card {
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+gap-2 {
+  gap: 0.5rem;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.error-message {
+  margin-top: 4px;
+  color: red;
+  font-size: 12px;
+}
